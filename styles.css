@@ -96,7 +96,7 @@ nav {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: url('/images/logo-manoel-quixabeira.svg') center 35% / cover no-repeat;
+  background: url('images/logo-manoel-quixabeira.svg') center 35% / cover no-repeat;
   filter: grayscale(10%) contrast(1.1) brightness(0.55);
 }
 
@@ -274,7 +274,7 @@ section { padding: 7rem 4rem; }
 .sobre-image-inner {
   width: 100%;
   aspect-ratio: 3/4;
-  background: url('/images/Manoel.jpeg') center top / cover no-repeat;
+  background: url('images/Manoel.jpeg') center top / cover no-repeat;
   filter: grayscale(20%) contrast(1.05);
   border-radius: 2px;
 }
@@ -939,6 +939,28 @@ footer {
   .card-stat-row { gap: 1.2rem; }
 }
 
+
+/* ── WHATSAPP FLUTUANTE ── */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 6px 28px rgba(37,211,102,0.55);
+}
 
 @media (max-width: 900px) {
   nav { padding: 1.2rem 2rem; }
