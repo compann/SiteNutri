@@ -710,6 +710,9 @@ footer {
   color: var(--accent);
   line-height: 1;
   font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  display: inline-block;
+  min-width: 3ch;
 }
 
 .counter-suffix {
@@ -928,11 +931,14 @@ footer {
 /* Responsive resultados */
 @media (max-width: 900px) {
   .resultados-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-  #resultados { padding: 5rem 2rem; }
-  .resultados-counters { flex-direction: row; gap: 1.5rem; }
+  #resultados { padding: 5rem 1.5rem; }
+  .resultados-counters { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2rem; }
+  .counter-num { font-size: 2.2rem; min-width: 2ch; }
+  .counter-suffix { font-size: 1.4rem; }
   .card-before-after { aspect-ratio: 4/3; }
   .card-info { padding: 1.5rem; }
   .card-stat-row { gap: 1.2rem; }
+  .resultados-carousel-wrap { margin: 0 -1.5rem; border-left: none; border-right: none; border-radius: 0; }
 }
 
 
