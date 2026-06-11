@@ -963,13 +963,32 @@ footer {
 }
 
 @media (max-width: 900px) {
-  nav { padding: 1.2rem 2rem; }
+  /* Nav */
+  nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
-  section { padding: 5rem 2rem; }
+  .nav-cta { font-size: 0.72rem; padding: 0.5rem 1rem; letter-spacing: 0.04em; }
+
+  /* Hero */
+  #hero { overflow: hidden; }
+  .hero-content { padding: 0 1.5rem 4rem; }
+  .hero-title { font-size: clamp(2.8rem, 13vw, 4.5rem); }
+  .hero-stats { gap: 1.5rem; margin-top: 1.25rem; flex-wrap: wrap; }
+  .stat-number { font-size: 1.7rem; }
+  .stat-label { font-size: 0.65rem; }
+  .hero-scroll { right: 1.5rem; display: none; }
+  .side-tag { display: none; }
+
+  /* Sections */
+  section { padding: 5rem 1.5rem; }
   #sobre { grid-template-columns: 1fr; gap: 3rem; }
+
+  /* Processo */
   .processo-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .processo-step { border-right: none; padding: 0 0 2rem 0 !important; border-bottom: 0.5px solid var(--border); }
-  .hero-content { padding: 0 2rem 4rem; }
-  .hero-scroll { right: 2rem; }
+
+  /* Footer */
   footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+
+  /* WhatsApp */
+  .whatsapp-float { bottom: 1.25rem; right: 1.25rem; width: 50px; height: 50px; }
 }
