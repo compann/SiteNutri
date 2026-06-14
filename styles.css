@@ -346,6 +346,21 @@ section { padding: 7rem 4rem; }
 .esp-card:hover::before { width: 100%; }
 .esp-card:hover { background: var(--surface2); }
 
+.esp-link {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.6;
+  transition: opacity 0.3s, letter-spacing 0.3s;
+}
+
+.esp-card:hover .esp-link {
+  opacity: 1;
+  letter-spacing: 0.2em;
+}
+
 .esp-number {
   font-family: var(--font-display);
   font-size: 3rem;
@@ -785,7 +800,7 @@ footer {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/pose.jpg') 50% 10% / cover no-repeat;
+  background: url('images/pose.jpg') 50% 40% / cover no-repeat;
   filter: grayscale(10%) contrast(1.08) brightness(0.78);
   z-index: 0;
 }
