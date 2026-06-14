@@ -763,6 +763,134 @@ footer {
   color: var(--accent);
 }
 
+/* ── NUTRIÇÃO ESPORTIVA DESTAQUE ── */
+#nutricao-esportiva {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  overflow: hidden;
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.esportiva-photo {
+  position: relative;
+  overflow: hidden;
+  min-height: 680px;
+}
+
+.esportiva-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(10%) contrast(1.08) brightness(0.78);
+  display: block;
+}
+
+.esportiva-badge-comp {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background: rgba(10,10,10,0.88);
+  border: 0.5px solid var(--border);
+  border-left: 2px solid var(--accent);
+  backdrop-filter: blur(8px);
+  padding: 0.85rem 1.25rem;
+  border-radius: 2px;
+}
+
+.esportiva-badge-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.esportiva-badge-sub {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.esportiva-content {
+  padding: 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--surface);
+  border-left: 0.5px solid var(--border);
+}
+
+.esportiva-texto {
+  font-size: 0.97rem;
+  color: rgba(240,236,228,0.7);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.esportiva-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+  margin: 2rem 0;
+}
+
+.esportiva-item {
+  padding: 1.4rem;
+  background: var(--surface2);
+  transition: background 0.3s;
+}
+
+.esportiva-item:hover { background: #1f1f1f; }
+
+.esportiva-item-title {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.esportiva-item-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.esportiva-cta {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 2px;
+  transition: background 0.25s, transform 0.2s;
+  align-self: flex-start;
+}
+.esportiva-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+
+@media (max-width: 900px) {
+  #nutricao-esportiva { grid-template-columns: 1fr; }
+  .esportiva-photo { min-height: 420px; }
+  .esportiva-content { padding: 3rem 1.5rem; border-left: none; border-top: 0.5px solid var(--border); }
+  .esportiva-grid { grid-template-columns: 1fr; }
+}
+
 /* ── DIFERENCIAIS ── */
 #diferenciais {
   background: var(--surface);
