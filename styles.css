@@ -800,7 +800,7 @@ footer {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/pose.jpg') 50% 20% / cover no-repeat;
+  background: url('images/pose.jpg') 50% 5% / cover no-repeat;
   filter: grayscale(10%) contrast(1.08) brightness(0.78);
   z-index: 0;
 }
