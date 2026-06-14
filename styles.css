@@ -800,7 +800,7 @@ footer {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/pose.jpg') 50% 40% / cover no-repeat;
+  background: url('images/pose.jpg') 50% 20% / cover no-repeat;
   filter: grayscale(10%) contrast(1.08) brightness(0.78);
   z-index: 0;
 }
@@ -905,6 +905,7 @@ footer {
 @media (max-width: 900px) {
   #nutricao-esportiva { grid-template-columns: 1fr; }
   .esportiva-photo { min-height: 420px; }
+  .esportiva-photo::before { background-position: 50% 40%; }
   .esportiva-content { padding: 3rem 1.5rem; border-left: none; border-top: 0.5px solid var(--border); }
   .esportiva-grid { grid-template-columns: 1fr; }
 }
