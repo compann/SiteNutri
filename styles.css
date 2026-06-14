@@ -778,8 +778,16 @@ footer {
   position: relative;
   overflow: hidden;
   min-height: 640px;
-  background: url('images/pose.jpg') center top / cover no-repeat;
+  min-width: 0;
+}
+
+.esportiva-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('images/pose.jpg') 50% 10% / cover no-repeat;
   filter: grayscale(10%) contrast(1.08) brightness(0.78);
+  z-index: 0;
 }
 
 .esportiva-badge-comp {
@@ -787,6 +795,7 @@ footer {
   bottom: 2rem;
   left: 2rem;
   background: rgba(10,10,10,0.88);
+  z-index: 1;
   border: 0.5px solid var(--border);
   border-left: 2px solid var(--accent);
   backdrop-filter: blur(8px);
@@ -813,12 +822,13 @@ footer {
 }
 
 .esportiva-content {
-  padding: 6rem 5rem;
+  padding: 5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--surface);
   border-left: 0.5px solid var(--border);
+  min-width: 0;
 }
 
 .esportiva-texto {
@@ -1075,8 +1085,10 @@ footer {
 
 .depo-photo {
   flex: 0 0 48%;
-  background-size: cover;
-  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: var(--surface2);
   filter: grayscale(8%) contrast(1.05);
 }
 
